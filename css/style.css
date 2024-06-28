@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+html,body{font-family: "Noto Sans KR", sans-serif; color: #fff;}
+.container{width: 100%; height: 100vh; position: relative; perspective: 1300px;}
+.container>video{width: 100%; height: 100%; display: block; object-fit: cover;}
+
+.wrap{position: absolute; width: 600px; height: 850px; left: calc(50% - 300px); top: calc(50% - 425px);}
+.box{width: 100%; height: 100%; position: absolute; left: 0; top: 0;} 
+.box>p{position: absolute; top: 0; font-size: 24px; font-weight: 600; opacity: 0; transition: all 1s;}
+.box:hover>p{top: -45px; opacity: 1; color: #000; text-shadow: 0px 0px 20px hsla(0, 0%, 100%, 1);}
+
+/*box1*/
+.box1{width: 100%; height: 100%;  border: #000 1px solid;}
+.box1>div{width: 100%; height: 100%; align-items: center; position: relative; overflow: hidden; transform: scale(1.0); transition: all 0.5s;}
+.box1>a{width: 100%; height: 100%; cursor: pointer; display: flex;}
+.box1 img{position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;}
+.box1>div:hover{transform: scale(1.02);}
+/*box1*/
+/*box2*/
+.box2 .inner{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; position: relative;}
+
+.box2 .summary{width: 100%; height: 36%; background-color: #000; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-sizing: border-box; padding: 0px 20px; transition: all 0.5s;  overflow: hidden; transform: scale(1.0);}
+.box2 .summary span{font-size: 13px; transition: all 0.7s;}
+.box2 .summary>p{font-size: 13px; font-weight: 300;  transition: all 0.8s;}
+.box2 .summary>p:nth-child(1){margin-top: 20px;}
+.box2 .summary>p:nth-child(2){margin-bottom: 20px;}
+.box2 .summary:hover{transform: scale(1.03);}
+.box2 .summary:hover p{font-size: 13.5px; font-weight: 400; margin-top: 8px;}
+.box2 .summary:hover span{font-size: 20px; font-weight: 500;}
+
+.section{width: 100%; height: 63%; display: flex; flex-direction: column; justify-content: space-between;}
+.section>li{width: 100%; height: 24%; background-color: #000; transition: all 0.5s; transform: scale(1.0);}
+.section>li>p{align-items: center; justify-content: center; line-height: 16px; padding: 0px 20px;}
+.s_1{display: block; font-size: 12px; margin: 10px 0px; transition: all 0.5s;}
+.s_2{font-size: 11.5px; font-weight: 300; transition: all 0.5s;}
+.section>li:hover{transform: scale(1.03);}
+.section>li:hover .s_1{font-size: 15px; font-weight: 400;} 
+.section>li:hover .s_2{font-size: 12px; font-weight: 400;} 
+/*box2*/
+/*box3*/
+.box3 .inner{ width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.box3 .artist{box-sizing: border-box;  width: 100%; height: 30%; background-color: #000; padding: 50px;}
+.box3 .artist>p{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box3 .artist>p>span{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box3 .picture{width: 100%; height: 68%; background-color: #000; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.box3 .picture>img{border: hsla(0, 0%, 100%, 0) 1px solid; width: 80%;  transition: all 1s;}
+.box3 .picture>p{font-size: 14px; font-weight: 300; line-height: 400%;}
+
+.box3 .inner>div{transition: all 0.5s; transform: scale(1.0);}
+.box3 .inner>div:hover{transform: scale(1.03);}
+.box3 .artist:hover>p{font-size: 15px; font-weight: 400;}
+.box3 .artist:hover>p>span{font-size: 20px; font-weight: 400;}
+.box3 .picture:hover>img{border: hsla(0, 0%, 100%, 1) 1px solid;}
+/*box3*/
+/*box4*/
+.box4 .inner{ width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.box4 .artist{box-sizing: border-box;  width: 100%; height: 30%; background-color: #000; padding: 50px;}
+.box4 .artist>p{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box4 .artist>p>span{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box4 .picture{width: 100%; height: 68%; background-color: #000; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.box4 .picture>img{border: hsla(0, 0%, 100%, 0) 1px solid; width: 80%;  transition: all 1s;}
+.box4 .picture>p{font-size: 14px; font-weight: 300; line-height: 400%;}
+
+.box4 .inner>div{transition: all 0.5s; transform: scale(1.0);}
+.box4 .inner>div:hover{transform: scale(1.03);}
+.box4 .artist:hover>p{font-size: 15px; font-weight: 400;}
+.box4 .artist:hover>p>span{font-size: 20px; font-weight: 400;}
+.box4 .picture:hover>img{border: hsla(0, 0%, 100%, 1) 1px solid;}
+/*box4*/
+/*box5*/
+.box5 .inner{ width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.box5 .artist{box-sizing: border-box;  width: 100%; height: 30%; background-color: #000; padding: 50px;}
+.box5 .artist>p{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box5 .artist>p>span{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box5 .picture{width: 100%; height: 68%; background-color: #000; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.box5 .picture>img{border: hsla(0, 0%, 100%, 0) 1px solid; width: 80%;  transition: all 1s;}
+.box5 .picture>p{font-size: 14px; font-weight: 300; line-height: 400%;}
+
+.box5 .inner>div{transition: all 0.5s; transform: scale(1.0);}
+.box5 .inner>div:hover{transform: scale(1.03);}
+.box5 .artist:hover>p{font-size: 15px; font-weight: 400;}
+.box5 .artist:hover>p>span{font-size: 20px; font-weight: 400;}
+.box5 .picture:hover>img{border: hsla(0, 0%, 100%, 1) 1px solid;}
+/*box5*/
+/*box6*/
+.box6 .inner{ width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.box6 .artist{box-sizing: border-box;  width: 100%; height: 30%; background-color: #000; padding: 50px; padding-top: 40px;}
+
+.box6 .artist>p{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box6 .artist>p>span{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box6 .picture{width: 100%; height: 68%; background-color: #000; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.box6 .picture>img{border: hsla(0, 0%, 100%, 0) 1px solid; width: 80%;  transition: all 1s;}
+.box6 .picture>p{font-size: 14px; font-weight: 300; line-height: 400%;}
+
+.box6 .inner>div{transition: all 0.5s; transform: scale(1.0);}
+.box6 .inner>div:hover{transform: scale(1.03);}
+.box6 .artist:hover{padding-top: 33px;}
+.box6 .artist:hover>p{font-size: 15px; font-weight: 400;}
+.box6 .artist:hover>p>span{font-size: 20px; font-weight: 400;}
+.box6 .picture:hover>img{border: hsla(0, 0%, 100%, 1) 1px solid;}
+/*box6*/
+/*box7*/
+.box7 .inner{ width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.box7 .artist{box-sizing: border-box;  width: 100%; height: 30%; background-color: #000; padding: 50px;}
+.box7 .artist>p{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box7 .artist>p>span{font-size: 14px; font-weight: 300; transition: all 0.7s;}
+.box7 .picture{width: 100%; height: 68%; background-color: #000; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.box7 .picture>img{border: hsla(0, 0%, 100%, 0) 1px solid; width: 80%;  transition: all 1s;}
+.box7 .picture>p{font-size: 14px; font-weight: 300; line-height: 400%;}
+
+.box7 .inner>div{transition: all 0.5s; transform: scale(1.0);}
+.box7 .inner>div:hover{transform: scale(1.03);}
+.box7 .artist:hover>p{font-size: 15px; font-weight: 400;}
+.box7 .artist:hover>p>span{font-size: 20px; font-weight: 400;}
+.box7 .picture:hover>img{border: hsla(0, 0%, 100%, 1) 1px solid;}
+/*box7*/
+/*box8*/
+.box8 .inner{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+.box8 .v_top{width: 100%; height: 74%; display: flex; justify-content: space-between; align-items: center;}
+.box8 .v_top>div{width: 49%; height: 100%; background-color: #000; box-sizing: border-box; padding: 20px;}
+.box8 .v_top>div>p{font-size: 12px; font-weight: 300; line-height: 140%;}
+.box8 .v_top>div>p>span{font-size: 11px; font-weight: 400; line-height: 160%;}
+.box8 .v_bottom{width: 100%; height: 25%; background-color: #000; box-sizing: border-box; padding: 20px; display: flex; justify-content: space-between; align-items: center;}
+.box8 .v_bottom img{width: 80%;}
+.box8 .v_bottom p{font-size: 10px; margin-left: 10px; margin-top: -10px;}
+.box8 .logo{width: 40%; line-height: 30px; display: block; align-items: center; border-left: 1px solid #fff; padding-left: 70px ;}
+
+.box8 .v_top>div{ transition: all 0.5s; transform: scale(1.0);}
+.box8 .v_top>div:hover{transform: scale(1.02);}
+.box8 .v_bottom{ transition: all 0.5s; transform: scale(1.0);}
+.box8 .v_bottom:hover{transform: scale(1.02);}
+/*box8*/
+
+/*팔각형둘러싸기 ((600px*8)/3.14)/2 -> 764px */
+.container{overflow: hidden; transform: scale(1.25);}
+.wrap{transform-style: preserve-3d;animation: 50s move infinite linear; }
+.box{backface-visibility: hidden;}
+.box8{transform: rotateY(0deg) translateZ(-764px);}
+.box7{transform: rotateY(45deg) translateZ(-764px);}
+.box6{transform: rotateY(90deg) translateZ(-764px);}
+.box5{transform: rotateY(135deg) translateZ(-764px);}
+.box4{transform: rotateY(180deg) translateZ(-764px);}
+.box3{transform: rotateY(225deg) translateZ(-764px);}
+.box2{transform: rotateY(270deg) translateZ(-764px);}
+.box1{transform: rotateY(315deg) translateZ(-764px);}
+
+.pause{animation-play-state: paused;}
+
+@keyframes move{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+ 
